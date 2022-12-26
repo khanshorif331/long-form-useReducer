@@ -1,7 +1,8 @@
-import LongForm from "./pages/LongForm";
+import LongForm from './pages/LongForm'
+import ShortForm from './pages/ShortForm'
 
 function App() {
-  return <LongForm />;
+	return <ShortForm />
 }
 
-export default App;
+export default App
