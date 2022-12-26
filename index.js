@@ -1,9 +1,9 @@
 //* Immutability
 
-let player = [{ name: "Shakib" }, { name: "Tamim" }];
+let player = [{ name: 'Shakib' }, { name: 'Tamim' }]
 
-console.log(player);
+console.log(player)
 
-player = [...player, { name: "Mashrafi" }];
+player = [...player, { name: 'Mashrafi' }]
 
-console.log(player);
+// console.log(player);
