@@ -12,10 +12,24 @@ const Counter = () => {
 	}
 	const [state, dispatch] = useReducer(reducer, initialState)
 	return (
-		<div>
-			My Count is : {state}
-			<button onClick={() => dispatch({ type: 'INCREMENT' })}>+</button>
-			<button onClick={() => dispatch({ type: 'DECREMENT' })}>-</button>
+		<div className="w-full h-screen flex justify-center items-center">
+			<div className="h-[300px] w-[400px] border border-red-300 p-8 d-flex items-center justify-center">
+				<p className="text-2xl">Count : {state}</p>
+				<div className="mt-10">
+					<button
+						className="px-4 py-2 bg-blue-500 text-white mr-4"
+						onClick={() => dispatch({ type: 'DECREMENT' })}
+					>
+						-
+					</button>
+					<button
+						className="px-4 py-2 bg-blue-500 text-white "
+						onClick={() => dispatch({ type: 'INCREMENT' })}
+					>
+						+
+					</button>
+				</div>
+			</div>
 		</div>
 	)
 }
