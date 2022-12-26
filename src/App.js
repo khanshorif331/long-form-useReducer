@@ -4,8 +4,8 @@ import ShortForm from './pages/ShortForm'
 
 function App() {
 	// return <ShortForm />
-	// return <LongForm />
-	return <Counter />
+	return <LongForm />
+	// return <Counter />
 }
 
 export default App
